@@ -1,0 +1,515 @@
+<DOCTYPE html>
+<body background="bg3.jpg">
+
+<p>
+<a href = "list countries.html"> Список стран по численности населения</a> <br>
+<a href ="main page.html"> Главная страница</a>
+</p>
+
+
+<p>
+
+<a href = "china page.html"> <img src="china.webp" width = "200" hspace = "60" border="1"> </a>
+
+<a href = "usa page.html" ><img src= "USA.webp" width="213"  hspace = "60" border="1"> </a>
+
+<a href = "indonesia page.html" ><img src= "indonesia.webp" width="200" hspace = "60" border="1"> </a>
+
+<a href = "pakistan page.html"> <img src="pakistan.jpg" width = "236" hspace = "60" border="1"></a>
+
+<a href = "nigeria page.html"> <img src="nigeria.webp" width = "225" hspace = "60" border="1"> </a>
+
+
+</p>
+
+
+<h1 align="center"> Список стран по численности населения</h1>
+<hr>
+
+<details>
+	<summary> График</summary>
+	<table>
+		<tr>
+			<td>Значение по оси ОХ</td>
+			<td align="center"> Результат</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name ="OX" value="1"> Года <br>
+			</td>
+			<td>
+				<input type="checkbox" name="res" value="1"> Макс. численность населения<br>
+			
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="radio" name="OX" value="1"> Континент <br>
+			</td>
+			<td> <input type = "checkbox" name="OX" value="2"> Ср. численность населения</td>
+		</tr>
+			
+		<tr>
+			<td>
+				<input type="radio" name="OX" value="2"> Выход к морю<br>
+			</td>
+			<td>
+				<input type="checkbox"  name="OX" value=="3"> Мин. численность населения
+			</td>
+		</tr>
+	</table>
+	<p><input type="button" value="Построить"></p>
+	<p>Здесь будет график</p>
+</details>
+
+
+<details>
+	<summary>Фильтр</summary>
+	<p>Континент: <input type="text"></p>
+	<p>Название страны: <input type="text"></p>
+	<p>Год от <input type="number" min="2022" max="2023"> до <input type="number" min="2022" max="2023"></p>
+	<p>Численность населения от<input type = "number" min ="30395002" max="1425423212"> до <input type = "number" min ="30395002" max="1425423212"></p>
+	<p>Выход к морю/океану:	<select name ="yes/no">
+					<option value="0">Да</option>
+					<option value="1">Нет</option>
+				</select>	
+	
+</details>
+
+<details>
+	<summary>Сортировка</summary>
+		<input type="button" value="Нет"><br>
+		Первый уровень:	
+		<select name="yes or no">
+				<option value="0">Континент</option>
+				<option value="1">Страна</option>
+				<option value="2">Год</option>
+				<option value="3">Население</option>
+				<option value="4">Выход к морю</option>
+			</select>
+			по убыванию?  <input type="checkbox" name="sort" value="1">
+		<br>
+
+		Второй уровень:
+			<select name="yes or no">
+				<option value="0">Континент</option>
+				<option value="1">Страна</option>
+				<option value="2">Год</option>
+				<option value="3">Население</option>
+				<option value="4">Выход к морю</option>
+			</select>
+			по убыванию? <input type="checkbox" name="sort" value="2">
+		
+		<br>
+		Второй уровень:
+			<select name="yes or no">
+				<option value="0">Континент</option>
+				<option value="1">Страна</option>
+				<option value="2">Год</option>
+				<option value="3">Население</option>
+				<option value="4">Выход к морю</option>
+			</select>
+			по убыванию? <input type="checkbox" name="sort" value="3">
+		
+		
+</details>
+
+
+<table border = "1" cellspacing="0" cellpadding="5" align="center">
+	<thead>
+		<tr>
+			<td><strong>Континент</strong></td>
+			<td><strong>Страна</strong></td>
+			<td><strong>Год</strong></td>
+			<td><strong>Население</strong></td>
+			<td><strong>Выход к морю/океану</strong></td>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Евразия</td>
+			<td><img src="india.webp" width="23" height="15" hspace="2" border="1">Индия</td>
+			<td>2022</td>
+			<td>1438069596</td>
+			<td>Да</td>
+			
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="india.webp" width="23" height="15" hspace="2" border="1">Индия</td>
+			<td>2023</td>
+			<td>1425423212</td>
+			<td>Да</td>
+			
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="china.webp" width="23" height="15" hspace="2" border="1">Китай</td>
+			<td>2022</td>
+			<td>1422584933</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="china.webp" width="23" height="15" hspace="2" border="1">Китай</td>
+			<td>2023</td>
+			<td>1425179569</td>
+			<td>Да</td>
+		</tr>
+
+
+
+		<tr>
+			<td>Северная Америка</td>
+			<td><img src="USA.webp" width="23" height="15" hspace="2" border="1">США</td>
+			<td>2022</td>
+			<td>343477335</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Северная Америка</td>
+			<td><img src="USA.webp" width="23" height="15" hspace="2" border="1">США</td>
+			<td>2023</td>
+			<td>341534046	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="indonesia.webp" width="23" height="15" hspace="2" border="1">Индонезия</td>
+			<td>2022	</td>
+			<td>281190067	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="indonesia.webp" width="23" height="15" hspace="2" border="1">Индонезия</td>
+			<td>2023	</td>
+			<td>278830529		</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="pakistan.jpg" width="23" height="15" hspace="2" border="1">Пакистан</td>
+			<td>2023</td>
+			<td>247504495	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="pakistan.jpg" width="23" height="15" hspace="2" border="1">Пакистан</td>
+			<td>2022	</td>
+			<td>243700667		</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Африка</td>
+			<td><img src="nigeria.webp" width="23" height="15" hspace="2" border="1">Нигерия</td>
+			<td>2023	</td>
+			<td>227882945	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Африка</td>
+			<td><img src="nigeria.webp" width="23" height="15" hspace="2" border="1">Нигерия</td>
+			<td>2022</td>
+			<td>223150896	</td>
+			<td>Да</td>
+		</tr>
+
+
+
+		<tr>
+			<td>Южная Америка</td>
+			<td><img src="brazil.webp" width="23" height="15" hspace="2" border="1">Бразилия</td>
+			<td> 2023		</td>
+			<td> 211140729 	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Южная Америка</td>
+			<td><img src="brazil.webp" width="23" height="15" hspace="2" border="1">Бразилия</td>
+			<td> 2022		</td>
+			<td> 210306415 	</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="ban.webp" width="23" height="15" hspace="2" border="1">Бангладеш</td>
+			<td> 2023	</td>
+			<td> 171466990	</td>
+			<td>Да</td>
+		</tr>
+
+
+
+<tr>
+			<td>Евразия</td>
+			<td><img src="ban.webp" width="23" height="15" hspace="2" border="1">Бангладеш</td>
+			<td> 2022	</td>
+			<td> 169384897	</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="russia.webp" width="23" height="15" hspace="2" border="1">Россия</td>
+			<td> 2023	</td>
+			<td> 145440500	</td>
+			<td>Да</td>
+		</tr>
+
+<tr>
+			<td>Евразия</td>
+			<td><img src="russia.webp" width="23" height="15" hspace="2" border="1">Россия</td>
+			<td> 2022	</td>
+			<td> 145579899	</td>
+			<td>Да</td>
+		</tr>
+
+
+
+		<tr>
+			<td>Южная Америка</td>
+			<td><img src="mexico.jpg" width="23" height="15" hspace="2" border="1">Мексика</td>
+			<td> 2023	</td>
+			<td> 129739759	</td>
+			<td>Да</td>
+		</tr>
+
+<tr>
+			<td>Южная Америка</td>
+			<td><img src="mexico.jpg" width="23" height="15" hspace="2" border="1">Мексика</td>
+			<td> 2022	</td>
+			<td> 123739759	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="efi.webp" width="23" height="15" hspace="2" border="1">Эфиопия</td>
+			<td> 2022	</td>
+			<td> 128613117	</td>
+			<td>Да</td>
+		</tr>
+<tr>
+			<td>Евразия</td>
+			<td><img src="efi.webp" width="23" height="15" hspace="2" border="1">Эфиопия</td>
+			<td> 2023	</td>
+			<td> 122613117	</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="japan.webp" width="23" height="15" hspace="2" border="1">Япония</td>
+			<td>	2023	</td>
+			<td> 124370947	</td>
+			<td>Да</td>
+		</tr>
+<tr>
+			<td>Евразия</td>
+			<td><img src="japan.webp" width="23" height="15" hspace="2" border="1">Япония</td>
+			<td> 2022	</td>
+			<td>  124997578	</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="fil.webp" width="23" height="15" hspace="2" border="1">Филиппины</td>
+			<td> 2023	</td>
+			<td> 114891199	</td>
+			<td>Да</td>
+		</tr>
+<tr>
+			<td>Евразия</td>
+			<td><img src="fil.webp" width="23" height="15" hspace="2" border="1">Филиппины</td>
+			<td> 2022	</td>
+			<td> 113964338	</td>
+			<td>Да</td>
+		</tr>
+
+
+
+
+		<tr>
+			<td>Африка</td>
+			<td><img src="egy.webp" width="23" height="15" hspace="2" border="1">Египет</td>
+			<td> 2023	</td>
+			<td> 114535772	</td>
+			<td>Да</td>
+		</tr>
+<tr>
+			<td>Африка</td>
+			<td><img src="egy.webp" width="23" height="15" hspace="2" border="1">Египет</td>
+			<td> 2022	</td>
+			<td> 112618250	</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Африка</td>
+			<td><img src="drk.webp" width="23" height="15" hspace="2" border="1">ДР Конго</td>
+			<td> 2023	</td>
+			<td> 105789731</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="vie.webp" width="23" height="15" hspace="2" border="1">
+			Вьетнам
+			</td>
+
+			<td>2022	</td>
+			<td> 102396968	</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="iran.webp" width="23" height="15" hspace="2" border="1">
+			Иран
+			</td>
+
+			<td> 2022	</td>
+			<td> 90608707		</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="iran.webp" width="23" height="15" hspace="2" border="1">
+			Иран
+			</td>
+
+			<td> 2023	</td>
+			<td> 89524246		</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="tur.jpg" width="23" height="15" hspace="2" border="1">
+			Турция
+			</td>
+
+			<td> 2023	</td>
+			<td> 87270501		</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="tur.jpg" width="23" height="15" hspace="2" border="1">
+			Турция
+			</td>
+
+			<td> 2022	</td>
+			<td> 87070501		</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="ger.webp" width="23" height="15" hspace="2" border="1">
+			Германия
+			</td>
+
+			<td> 2023		</td>
+			<td> 84548231		</td>
+			<td>Да</td>
+		</tr>
+
+<tr>
+			<td>Евразия</td>
+			<td><img src="ger.webp" width="23" height="15" hspace="2" border="1">
+			Германия
+			</td>
+
+			<td> 2022	</td>
+			<td> 84086227	</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="tha.jpg" width="23" height="15" hspace="2" border="1">
+			Таиланд
+			</td>
+
+			<td> 2023	</td>
+			<td> 71702435		</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="tha.jpg" width="23" height="15" hspace="2" border="1">
+			Таиланд
+			</td>
+
+			<td> 2022	</td>
+			<td> 71735329		</td>
+			<td>Да</td>
+		</tr>
+
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="bri.webp" 	width="23" height="15" hspace="2" border="1">
+			Великобритания
+			</td>
+
+			<td> 2023	</td>
+			<td> 68.682.962		</td>
+			<td>Да</td>
+		</tr>
+
+		<tr>
+			<td>Евразия</td>
+			<td><img src="bri.webp" 	width="23" height="15" hspace="2" border="1">
+			Великобритания
+			</td>
+
+			<td> 2022	</td>
+			<td> 68.179.315		</td>
+			<td>Да</td>
+		</tr>
+
+
+		
+
+		
+	</tbody>
+
+</table>
+
+</body>
